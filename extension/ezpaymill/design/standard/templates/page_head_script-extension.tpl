@@ -55,7 +55,7 @@ var PAYMILL_PUBLIC_KEY = '{cond( ezini('PaymillSettings','IsTestOrLive','ezpaymi
                     exp_year:$('.card-expiry-year').val(),
                     cvc:$('.card-cvc').val(),
                     cardholdername:$('.card-holdername').val(),
-                    amount: $('.card-amount-int').val(),    // required, integer, z.B. "15" für 0,15 Euro 
+                    amount_int: $('.card-amount-int').val(),    // required, integer, z.B. "15" für 0,15 Euro 
                     currency: $('.card-currency').val()    // required, ISO 4217 z.B. "EUR" od. "GBP"                    
 
                 }, PaymillResponseHandler);
